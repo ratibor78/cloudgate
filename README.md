@@ -7,5 +7,5 @@
 
 # Cloudgate
 > A program that allows you to administer OpenVPN clients from the AWS IAM console. 
-### Version 0.1
+#### Version 0.1
 
