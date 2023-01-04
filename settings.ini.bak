@@ -1,0 +1,21 @@
+[AWS_ACCESS_KEY_ID]
+# Access key for the AWS IAM user with IAMReadOnlyAccess
+aws_access_key_id = 
+
+[AWS_SECRET_ACCESS_KEY]
+# Secret access key for the AWS IAM user with IAMReadOnlyAccess
+aws_secret_access_key = 
+
+[AWS_VPN_ALLOW_GROUP]
+# The name of the IAM group users from which will be allowed OpenVPN access 
+vpn_allow_group = 
+
+[REQUEST_INTERVAL]
+# Interval for accessing the AWS IAM service for checking new users added
+# to VPN allowed group, set in seconds. 5 min by default.
+request_interval = 300
+
+[S3_BUCKET]
+# S3 bucket name, put it if you want to have a copy of OpenVPN users configs here
+# leave it empty to disable the OpenVPN configs uploading to the S3
+s3_bucket_name = 
