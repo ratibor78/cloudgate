@@ -1,0 +1,15 @@
+[Unit]
+Description=Cloudgate
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=$PWD/venv/bin/python3 cloudgate.py
+User=root
+WorkingDirectory=$PWD
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
