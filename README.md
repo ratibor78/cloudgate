@@ -9,3 +9,6 @@
 ### A program that allows you to administer OpenVPN clients from the AWS IAM console. 
 #### Version 0.1
 
+Python program for administering OpenVPN users from the AWS IAM service. Putting the IAM user into the specific group will automatically create 
+the OpenVPN client config file with the same name on the OpenVPN server side.This VPN client config will be active while the user is a member of that
+specific group and will be paused once the user has left that IAM group or will be completely removed if the user was deleted from the IAM service.
