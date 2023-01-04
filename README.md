@@ -6,4 +6,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/ratibor78/cloudgate?style=social)
 
 # Cloudgate
-## A program that allows you to administer OpenVPN clients from the AWS IAM console. 
+> A program that allows you to administer OpenVPN clients from the AWS IAM console. 
+### Version 0.1
+
