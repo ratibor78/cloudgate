@@ -34,10 +34,10 @@ to your AWS S3 bucket. Also after you remove the user from this IAM group the Op
 
 ### Installation
 
-1) Make sure the OpenVPN server installed and working 
-2) Clone the **Cloudgate** repo 
+1) Make sure the OpenVPN server was installed and working
+2) Clone the **cloudgate** repo 
 3) CD into the repo directory and then run **install.sh**
-4) After the **install.sh** script will finish the installationion you will need start the service with **'systemctl start cloudgate.service'**
+4) After the **install.sh** script will finish the installationion you will need start the service with **'systemctl start cloudgate.service'** command
 
 Or you can install Cloudgate manually:
 
@@ -58,13 +58,13 @@ $ systemctl enable cloudgate.service
 $ systemctl start cloudgate.service
 ```
 After installation go into the AWS IAM console and create the VPN allowed group for VPN users, the name of the group must be the same one that you setup in **settings.ini** file in **AWS_VPN_ALLOW_GROUP** section. 
-Also create the new user with name **vpnadmin** or any you like and set the policy **IAMReadOnlyAccess** and S3 read/write inline policy for this user. Copy the Access Kye ID and Secter Access KEY from the **vpnadmin** user and put into **settings.ini** file. 
+Also create the new user with name **vpnadmin** or any you like and set the policy **IAMReadOnlyAccess** and S3 read/write inline policy for this user. Copy the Access Kye ID and Secter Access KEY from this **vpnadmin** user and put into **settings.ini** file. 
 
 ### Usage
 
-Login into AWS IAM console and place any user into the VPN allowed group, wait for the time that was configured as the **REQUEST_INTERVAL**. After this you will find the new VPN client 'username.ovpn' config file in **./client_configs** folder and user will be added to the OpenVPN clients. If you have setup the S3 bucket name in the settings the client config will be also placed there. 
+Login into AWS IAM console and place any user into the VPN allowed group, wait for the time that was configured as the **REQUEST_INTERVAL**. After this you will find the new VPN client (username.ovpn) config file in **./client_configs** folder. Also, the new user will be added to the OpenVPN clients. If you have setup the S3 bucket name in the settings, the client config will be also placed there, so you can easily get it, without scp or ssh access to the OpenVPN server.
 
-Remove the user from the VPN allowed group and after the **REQUEST_INTERVAL** the user will be revoked from the OpenVPN server and username.ovpn configs will be deleted from **./client_configs** folder and S3 bucket. 
+Remove the user from the VPN allowed group and after the **REQUEST_INTERVAL** the user will be revoked from the OpenVPN server and (username.ovpn) config will be deleted from **./client_configs** folder and S3 bucket. 
 
 #### That's all, I hope you'll find this program useful. If you have any wishes you are welcome to contact me in any way you want. 
 
