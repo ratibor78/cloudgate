@@ -30,7 +30,7 @@ to your AWS S3 bucket. Also after you remove the user from this IAM group the Op
 3) Python3 and python3.*-venv packages installed
 
 ### Important
-**Cloudgate** was created for using with an OpenVPN server installed by openvpn-install.sh script from Nyr/openvpn-install repo, so some system path was hardcoded into the code, mind this if you will use this program with the manually installed version of OpenVPN or installed with another version of openvpn-install.sh script. 
+**Cloudgate** was created for using with an OpenVPN server installed by openvpn-install.sh script from **Nyr/openvpn-install** repo, so some system path was hardcoded into the code, mind this if you will use this program with the manually installed version of OpenVPN or installed with another version of openvpn-install.sh script. 
 There is no problem to exclude important paths for OpenVPN server commands in settings.ini in future releases. 
 
 ### Installation
