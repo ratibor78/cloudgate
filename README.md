@@ -64,10 +64,10 @@ Login into AWS IAM console and place any user into the VPN allowed group, wait f
 
 Remove the user from the VPN allowed group and after the **REQUEST_INTERVAL** the user will be revoked from the OpenVPN server and username.ovpn configs will be deleted from **./client_configs** folder and S3 bucket. 
 
----
 #### That's all, I hope you'll find this program useful. If you have any wishes you are welcome to contact me in any way you want. 
 
-## Credits & Licence
+### Credits & Licence
+---
 Many thanks to the [contributors](https://github.com/Angristan/OpenVPN-install/graphs/contributors) and Nyr's original work.
 
 This project is under the [MIT Licence](https://raw.githubusercontent.com/Angristan/openvpn-install/master/LICENSE)
