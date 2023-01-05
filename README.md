@@ -9,13 +9,12 @@
 ### A program that allows you to administer OpenVPN clients from the AWS IAM console. 
 #### Version 0.1
 
-> The main idea of this program is to allow you to administer the OpenVPN clients from your AWS account IAM console.
+> The main idea of this program is to allow you to administer the OpenVPN clients from your AWS IAM console.
 
 ## Description
 
-If you have your own EC2 instance with the OpenVPN server in you AWS VPC for providing VPN access.
-This program will give you a more comfortable way of administrating the VPN users than using an ssh console every time you need to create
-or revoke a new VPN user.
+If you have your own EC2 instance with the OpenVPN server in AWS VPC for providing VPN access, this program will give you a more comfortable
+way of administrating the VPN users than using an ssh console every time you need to create or revoke a new VPN user.
 
 Instead this you can use your IAM console as the UI for the internal OpenVPN server, just create an IAM group with the name 'vpnallow' or
 with any other name, you prefer, and then put the users that need VPN access into this group.
