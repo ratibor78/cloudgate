@@ -3,7 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/ratibor78/cloudgate)
 ![GitHub contributors](https://img.shields.io/github/contributors/ratibor78/cloudgate)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ratibor78/cloudgate)
-![GitHub Repo stars](https://img.shields.io/github/stars/ratibor78/cloudgate?style=social)
+
 
 # Cloudgate
 ### A program that allows you to administer OpenVPN clients from the AWS IAM console. 
