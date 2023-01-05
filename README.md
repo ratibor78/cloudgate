@@ -26,7 +26,7 @@ to your AWS S3 bucket. Also after you remove the user from this IAM group the Op
 ### Dependencies
 
 1) EC2 instance in public subnet of your VPC with Linux
-2) OpenVPN server installed on this EC2 with [openvpn-install.sh ](https://github.com/angristan/openvpn-install)
+2) OpenVPN server installed on the EC2 with [openvpn-install.sh ](https://github.com/angristan/openvpn-install)
 
 ### Important
 **Cloudgate** was created for use with an OpenVPN server installed by openvpn-install.sh script, so some path was hardcoded into the code, mind this if you 
@@ -64,8 +64,11 @@ Login into AWS IAM console and place any user into the VPN allowed group, wait f
 
 Remove the user from the VPN allowed group and after the **REQUEST_INTERVAL** the user will be revoked from the OpenVPN server and username.ovpn configs will be deleted from **./client_configs** folder and S3 bucket. 
 
+---
 #### That's all, I hope you'll find this program useful. If you have any wishes you are welcome to contact me in any way you want. 
 
-License
+## Credits & Licence
 ----
-MIT
+Many thanks to the [contributors](https://github.com/Angristan/OpenVPN-install/graphs/contributors) and Nyr's original work.
+
+This project is under the [MIT Licence](https://raw.githubusercontent.com/Angristan/openvpn-install/master/LICENSE)
