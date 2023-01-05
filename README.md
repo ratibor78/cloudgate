@@ -50,7 +50,7 @@ $ pip3 install -r requirements.txt
 ```
 2) Modify **settings.ini** file and copy service to systemd
 ```sh
-$ cp settings.ini.back settings.ini
+$ cp settings.ini.bak settings.ini
 $ vi settings.ini
 $ vi cloudgate.service.template
 $ cp cloudgate.service.template /lib/systemd/system/cloudgate.service
