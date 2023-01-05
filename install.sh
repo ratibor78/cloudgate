@@ -26,7 +26,7 @@ systemctl enable geostat.service
 echo ""
 echo "Please edit the settings.ini file and set parameters"
 sleep 1
-cp settings.ini.back settings.ini
+cp settings.ini.bak settings.ini
 
 PS3="Select the editor please: "
 
