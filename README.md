@@ -61,6 +61,8 @@ $ systemctl start cloudgate.service
 After installation go into the AWS IAM console and create the VPN allowed group for VPN users, the name of the group must be the same one that you setup in **settings.ini** file in **AWS_VPN_ALLOW_GROUP** section. 
 Also create the new user with name **vpnadmin** or any you like and set the policy **IAMReadOnlyAccess** and S3 read/write inline policy for this user. Copy the Access Kye ID and Secter Access KEY from the **vpnadmin** user and put into **settings.ini** file. 
 
+**[⬆ back to top](# Cloudgate)**
+
 ### Usage
 
 Login into AWS IAM console and place any user into the VPN allowed group, wait for the time that was configured as the **REQUEST_INTERVAL**. After this you will find the new VPN client 'username.ovpn' config file in **./client_configs** folder and user will be added to the OpenVPN clients. If you have setup the S3 bucket name in the settings the client config will be also placed there. 
@@ -75,3 +77,5 @@ Special thanks to [Nyr](https://github.com/Nyr) for his [openvpn-install.sh](htt
 ### Licence
 
 This project is under the [MIT Licence](https://raw.githubusercontent.com/Angristan/openvpn-install/master/LICENSE)
+
+**[⬆ back to top](# Cloudgate)**
