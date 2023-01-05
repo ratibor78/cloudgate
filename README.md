@@ -22,3 +22,8 @@ Cloudgate will create the OpenVPN configs for these users automatically and put 
 to your AWS S3 bucket. Also after you remove the user from this IAM group the OpenVPN client config will be revoked from the VPN server automatically.
 
 > That's the main goal, to provide a single source of truth for administration VPN users in your AWS organization, so you will never forget to revoke the VPN access after deleting this user from your IAM service.
+
+# Dependencies
+
+1) EC2 instance in public subnet of your VPC with Linux
+2) OpenVPN server installed on this EC2 with [openvpn-install.sh ](https://github.com/angristan/openvpn-install)
