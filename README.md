@@ -32,7 +32,7 @@ to your AWS S3 bucket. Also after you remove the user from this IAM group the Op
 > If you use Ubuntu 22.04 you need to use this fork of the [openvpn-install.sh ](https://github.com/f100024/openvpn-install) script with issue https://github.com/angristan/openvpn-install/issues/1000 fixed 
 3) Python3 and python3.*-venv packages installed
 
-### Important 2
+### Important
 **Cloudgate** was created for use with an OpenVPN server installed by openvpn-install.sh script, so some path was hardcoded into the code, mind this if you 
 will use this program with the manually installed version of OpenVPN. There is no problem to exclude important paths for OpenVPN server commands in settings.ini in future releases. 
 
