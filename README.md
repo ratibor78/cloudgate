@@ -51,6 +51,9 @@ $ pip3 install -r requirements.txt
 ```sh
 $ cp settings.ini.back settings.ini
 $ vi settings.ini
-$ vi cloudgate.service
-$ cp cloudgate.service /lib/systemd/system/
+$ vi cloudgate.service.template
+$ cp cloudgate.service.template /lib/systemd/system/cloudgate.service
+$ systemctl enable cloudgate.service
+$ systemctl start cloudgate.service
 ```
+### Usage
