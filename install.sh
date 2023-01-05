@@ -21,7 +21,7 @@ do
     eval echo "$line"
 done < "./cloudgate.service.template" > /lib/systemd/system/cloudgate.service
 
-systemctl enable geostat.service
+systemctl daemon-reload && systemctl enable geostat.service
 
 echo ""
 echo "Please edit the settings.ini file and set parameters"
