@@ -15,7 +15,12 @@ pip3 install -r requirements.txt && deactivate
 echo ""
 echo "Installing Cloudgate systemd service"
 sleep 1
-cp ./cloudgate.service /lib/systemd/system/cloudgate.service
+
+while read line
+do
+    eval echo "$line"
+done < "./cloudgate.service.template" > /lib/systemd/system/cloudgate.service
+
 systemctl enable geostat.service
 
 echo ""
