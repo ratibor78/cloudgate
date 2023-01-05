@@ -11,7 +11,7 @@
 
 > The main idea of this program is to allow you to administer the OpenVPN clients from your AWS IAM console.
 
-## Description
+### Description
 
 If you have your own EC2 instance with the OpenVPN server in AWS VPC for providing VPN access, this program will give you a more comfortable
 way of administrating the VPN users than using an ssh console every time when you need to create or revoke a new VPN user.
@@ -23,7 +23,7 @@ to your AWS S3 bucket. Also after you remove the user from this IAM group the Op
 
 > That's the main goal, to provide a single source of truth for administration VPN users in your AWS organization, so you will never forget to revoke the VPN access after deleting this user from your IAM service.
 
-## Dependencies
+### Dependencies
 
 1) EC2 instance in public subnet of your VPC with Linux
 2) OpenVPN server installed on this EC2 with [openvpn-install.sh ](https://github.com/angristan/openvpn-install)
