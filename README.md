@@ -27,3 +27,7 @@ to your AWS S3 bucket. Also after you remove the user from this IAM group the Op
 
 1) EC2 instance in public subnet of your VPC with Linux
 2) OpenVPN server installed on this EC2 with [openvpn-install.sh ](https://github.com/angristan/openvpn-install)
+
+### Important
+Cloudgate was created for use with an OpenVPN server installed by openvpn-install.sh script, so some path was hardcoded into the code, mind this if you 
+will use this program with the manually installed version of OpenVPN. There is no problem to exclude important paths for OpenVPN server commands in settings.ini in future releases. 
