@@ -30,8 +30,8 @@ to your AWS S3 bucket. Also after you remove the user from this IAM group the Op
 3) Python3 and python3.*-venv packages installed
 
 ### Important
-**Cloudgate** was created for use with an OpenVPN server installed by openvpn-install.sh script, so some path was hardcoded into the code, mind this if you 
-will use this program with the manually installed version of OpenVPN. There is no problem to exclude important paths for OpenVPN server commands in settings.ini in future releases. 
+**Cloudgate** was created for use with an OpenVPN server installed by openvpn-install.sh script from Nyr/openvpn-install repo, so some system path was hardcoded into the code, mind this if you will use this program with the manually installed version of OpenVPN or installed with another version of openvpn-install.sh script. 
+There is no problem to exclude important paths for OpenVPN server commands in settings.ini in future releases. 
 
 ### Installation
 
@@ -68,6 +68,9 @@ Login into AWS IAM console and place any user into the VPN allowed group, wait f
 Remove the user from the VPN allowed group and after the **REQUEST_INTERVAL** the user will be revoked from the OpenVPN server and username.ovpn configs will be deleted from **./client_configs** folder and S3 bucket. 
 
 #### That's all, I hope you'll find this program useful. If you have any wishes you are welcome to contact me in any way you want. 
+
+### Thanks
+Special thanks to [Nyr](https://github.com/Nyr) for his [openvpn-install.sh](https://github.com/Nyr/openvpn-install)
 
 ### Licence
 
