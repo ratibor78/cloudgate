@@ -34,11 +34,11 @@ select lng in Vi Nano Quit
 do
     case $lng in
         "Vi")
-           "${VISUAL:-"${EDITOR:-vi}"}" "settings.ini";;
-           break;;
+           "${VISUAL:-"${EDITOR:-vi}"}" "settings.ini"
+            break;;
         "Nano")
-           "${VISUAL:-"${EDITOR:-nano}"}" "settings.ini";;
-           break;;
+           "${VISUAL:-"${EDITOR:-nano}"}" "settings.ini"
+            break;;
         "Quit")
            echo "Please don't forget to edit settings.ini before starting the service"
            break;;
