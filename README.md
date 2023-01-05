@@ -26,10 +26,7 @@ to your AWS S3 bucket. Also after you remove the user from this IAM group the Op
 ### Dependencies
 
 1) EC2 instance in public subnet of your VPC with Linux
-2) OpenVPN server installed on the EC2 with [openvpn-install.sh ](https://github.com/angristan/openvpn-install)
-
-> Attention !!!
-> If you use Ubuntu 22.04 you need to use this fork of the [openvpn-install.sh ](https://github.com/f100024/openvpn-install) script with issue https://github.com/angristan/openvpn-install/issues/1000 fixed 
+2) OpenVPN server installed on the EC2 with [openvpn-install.sh ](https://github.com/Nyr/openvpn-install)
 3) Python3 and python3.*-venv packages installed
 
 ### Important
@@ -57,6 +54,7 @@ $ cp settings.ini.back settings.ini
 $ vi settings.ini
 $ vi cloudgate.service.template
 $ cp cloudgate.service.template /lib/systemd/system/cloudgate.service
+$ systemctl daemon-reload
 $ systemctl enable cloudgate.service
 $ systemctl start cloudgate.service
 ```
