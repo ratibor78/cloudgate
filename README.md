@@ -66,8 +66,6 @@ Remove the user from the VPN allowed group and after the **REQUEST_INTERVAL** th
 
 #### That's all, I hope you'll find this program useful. If you have any wishes you are welcome to contact me in any way you want. 
 
-### Credits & Licence
-
-Many thanks to the [contributors](https://github.com/Angristan/OpenVPN-install/graphs/contributors) and Nyr's original work.
+### Licence
 
 This project is under the [MIT Licence](https://raw.githubusercontent.com/Angristan/openvpn-install/master/LICENSE)
